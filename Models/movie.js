@@ -1,10 +1,10 @@
 const Sequelize = require('sequelize');
 const sequelize = require('../Config/db');
 
-const Movie = sequelize.define('user', {
-    titles: Sequelize.STRING,
+const Movie = sequelize.define('movies', {
+    title: Sequelize.STRING,
     genres: Sequelize.STRING,
-    years: Sequelize.STRING
+    year: Sequelize.STRING
 }, {
     timestamps: false, // Disable timestamps
 });

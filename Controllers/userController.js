@@ -1,7 +1,7 @@
 const User = require('../Models/user');
 const bcrypt = require('bcrypt');
 const logger = require('../logger'); // Sesuaikan dengan lokasi file logger
-
+const jwt = require('jsonwebtoken');
 
 // Controller untuk mendaftar pengguna
 const registerUser = async (req, res) => {
