@@ -7,7 +7,7 @@ const router = express.Router();
 
 /**
  * @swagger
- * /api/users:
+ * /api/users/users:
  *   get:
  *     summary: Mendapatkan daftar pengguna
  *     description: Mendapatkan daftar semua pengguna.

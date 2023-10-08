@@ -1,12 +1,21 @@
-const Sequelize = require('sequelize');
-const sequelize = require('../Config/db');
+const { DataTypes } = require('sequelize');
+const sequelize = require('../Config/db'); // Sesuaikan dengan path file konfigurasi database Anda
 
-const Movie = sequelize.define('user', {
-    titles: Sequelize.STRING,
-    genres: Sequelize.STRING,
-    years: Sequelize.STRING
+const Movie = sequelize.define('Movie', {
+    title: {
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
+    description: {
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
+    photoPath: {
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
 }, {
-    timestamps: false, // Disable timestamps
+    timestamps: false,
 });
 
 module.exports = Movie;

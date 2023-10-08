@@ -5,4 +5,7 @@ const sequelize = new Sequelize('testing', 'root', '', {
   dialect: 'mysql',
 });
 
+const Movie = require('../Models/movie'); // Sesuaikan dengan path model Anda
+
+
 module.exports = sequelize;
